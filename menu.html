@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Two Cups - Menu</title>
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #f4f4f4;
+        }
+        .navbar {
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+            background-color: #ffffff;
+        }
+        .navbar-brand {
+            font-weight: 600;
+            color: #6c757d;
+        }
+        .nav-link {
+            color: #6c757d;
+            transition: color 0.3s ease;
+        }
+        .nav-link:hover {
+            color: #9A8C98;
+        }
+
+        
+        .container {
+            padding: 60px 0;
+            background-color: #ffffff;
+        }
+        .card {
+            border: none;
+            border-radius: 15px;
+            overflow: hidden;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            position: relative;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+        }
+        .card:hover {
+            transform: scale(1.05); 
+            z-index: 1; 
+            box-shadow: 0 20px 30px rgba(0, 0, 0, 0.3);
+        }
+        .card-img-top {
+            height: 220px;
+            object-fit: cover;
+            filter: brightness(85%);
+            transition: filter 0.3s ease;
+        }
+        .card-img-top:hover {
+            filter: brightness(100%);
+        }
+        .card-body {
+            background: linear-gradient(135deg, #e2d4e6 0%, #ffffff 100%);
+            position: relative;
+            padding: 20px;
+            text-align: left;
+            border-radius: 0 0 15px 15px;
+        }
+        .card-title {
+            font-weight: 600;
+            color: #4A4E69;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+        .price {
+            font-size: 1.5rem;
+            color: #d67e45; 
+            font-weight: bold;
+            margin-top: 10px;
+        }
+
+       
+        .card {
+            opacity: 0;
+            animation: fadeInUp 0.8s ease forwards;
+        }
+        .card:nth-child(1) { animation-delay: 0.2s; }
+        .card:nth-child(2) { animation-delay: 0.4s; }
+        .card:nth-child(3) { animation-delay: 0.6s; }
+
+        @keyframes fadeInUp {
+            0% {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            100% {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+       
+        .menu-item {
+            margin-bottom: 40px;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #4A4E69;
+            color: white;
+            padding: 20px;
+            position: relative;
+        }
+    </style>
+</head>
+<body>
+
+     <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg navbar-light">
+    <a class="navbar-brand d-flex align-items-center" href="index.html">
+        
+      <img src="logo.jpg" alt="Logo" class="d-inline-block align-text-top logo">
+      Two Cups Cafe </a>
+    <button class="navbar-toggler" type="button">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+            <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+            <li class="nav-item active"><a class="nav-link" href="#">Menu</a></li>
+            <li class="nav-item"><a class="nav-link" href="about.html">About Us</a></li>
+            <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+           
+
+        </ul>
+    </div>
+</nav>
+    <!-- Menu Section -->
+    <section class="container mt-5 text-center">
+        <h2 class="text-center mb-4" style="color: #4A4E69; font-weight: bold;">Our Menu</h2>
+        <div class="row">
+            <!-- Menu Items -->
+            <div class="col-md-4 menu-item">
+                <div class="card">
+                    <img src="menu/menu/images/menu (3).jpeg" class="card-img-top" alt="Classic Cappuccino">
+                    <div class="card-body">
+                        <h5 class="card-title">Classic Cappuccino</h5>
+                        <p class="price">150 Rs</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 menu-item">
+                <div class="card">
+                    <img src="menu/menu/images/menu (7).jpeg" class="card-img-top" alt="Cold Coffee">
+                    <div class="card-body">
+                        <h5 class="card-title">Cold Coffee</h5>
+                        <p class="price">50 Rs</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 menu-item">
+                <div class="card">
+                    <img src="menu/menu/images/menu (2).jpeg" class="card-img-top" alt="Plan Maggie">
+                    <div class="card-body">
+                        <h5 class="card-title">Plan Maggie</h5>
+                        <p class="price">35 Rs</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 menu-item">
+                <div class="card">
+                    <img src="menu/menu/images/menu (5).jpeg" class="card-img-top" alt="Regular Burger">
+                    <div class="card-body">
+                        <h5 class="card-title">Regular Burger</h5>
+                        <p class="price">50 Rs</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 menu-item">
+                <div class="card">
+                    <img src="menu/menu/images/menu (8).jpeg" class="card-img-top" alt="Fresh Sandwich">
+                    <div class="card-body">
+                        <h5 class="card-title">Fresh Sandwich</h5>
+                        <p class="price">40 Rs</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 menu-item">
+                <div class="card">
+                    <img src="menu/menu/images/menu (6).jpeg" class="card-img-top" alt="French Fries">
+                    <div class="card-body">
+                        <h5 class="card-title">French Fries</h5>
+                        <p class="price">50 Rs</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+  <footer class="bg-dark text-white text-center py-4">
+    <p>&copy; 2024 Two Cups Cafe. All Rights Reserved.</p>
+    <p>Follow us on <a href="#" class="text-white">Instagram</a> | <a href="#" class="text-white">Facebook</a> | <a href="#" class="text-white">Twitter</a></p>
+  </footer>
+
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+   <!-- Bootstrap 5 JavaScript Bundle (includes Popper.js) -->
+   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    
+</body>
+</html>
+
+
+
+
+
+
+
+
+ 
